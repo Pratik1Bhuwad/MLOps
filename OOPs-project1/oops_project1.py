@@ -17,7 +17,7 @@ class MessagingApp:
         if user_input=="1":
             self.signup()
         elif user_input=="2":
-            pass
+            self.signin()
         elif user_input=="3":
             pass
         elif user_input=="4":
@@ -39,5 +39,22 @@ class MessagingApp:
         print("Signup successful!")
         print("\n")
         self.menu()
+
+    def signin(self):
+        if self.username=='' and self.passwd=='':
+            print("No user found. Please sign up first.")
+            
+        else:
+            uname=input("Enter your email-> ")
+            passward=input("Enter your password-> ")
+            if self.username==self.email and self.passwd==self.passward:
+                print("Sign in successful!")
+                self.loggedin=True
+            else:
+                print("Plz enter correct creadentials...")
+        print("\n")
+        self.menu()
+
+
 
 obj=MessagingApp()

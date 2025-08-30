@@ -15,7 +15,7 @@ class MessagingApp:
 
                          ->''')
         if user_input=="1":
-            pass
+            self.signup()
         elif user_input=="2":
             pass
         elif user_input=="3":
@@ -28,5 +28,16 @@ class MessagingApp:
             exit()
         else:
             print(" Choose valid Option.")
+
+        
+    def signup(self):
+        email=input("Enter your email-> ")
+        password = input("Enter your password-> ")
+        self.username=email
+        self.passwd=password
+        self.loggedin=True
+        print("Signup successful!")
+        print("\n")
+        self.menu()
 
 obj=MessagingApp()

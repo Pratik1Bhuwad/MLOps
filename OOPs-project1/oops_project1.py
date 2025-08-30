@@ -1,8 +1,8 @@
 class MessagingApp:
     def __init__(self):
-        self.userid=''
+        self.username=''
         self.passwd=''
-        self.signin=False
+        self.loggedin=False
         self.menu()
 
     def menu(self):
@@ -14,16 +14,18 @@ class MessagingApp:
                          5. Exit.
 
                          ->''')
-        if user_input==1:
+        if user_input=="1":
             pass
-        elif user_input==2:
+        elif user_input=="2":
             pass
-        elif user_input==3:
+        elif user_input=="3":
             pass
-        elif user_input==4:
+        elif user_input=="4":
             pass
-        elif user_input==5:
+        elif user_input=="5":
             pass
+        elif user_input=="6":
+            exit()
         else:
             print(" Choose valid Option.")
 

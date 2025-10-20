@@ -1,0 +1,74 @@
+______________________ BASIC COMMANDS ______________________ 
+
+1. git init (to initialize a git repo)
+
+2. git status (tells you current status of git repo)
+
+3. git add filename.py | git add. (move work to staging area)
+
+4. git commit -m "commit message"
+
+5. Create a gitignore file and add files/folders that doesn't need tracking.
+
+
+
+______________________ SEEING COMMITS ______________________ 
+
+1. git log (see details for all the commits)
+
+2. git log-oneline (1 liner details for all commits)
+
+3. git log-stat (details of changes on commit level)
+
+4. git log -p (see code changes on commit level)
+
+5. git show <6 digit sha id> (see changes on specific commit)
+
+6. git diff (changes made within staging area before commit)
+
+
+
+______________________ BRANCHING AND MERGING ______________________ 
+
+1. git branch <name> <sha id>(creates a new branch)
+
+2. git branch (lists all branches)
+
+3. git checkout <branch> (switch to another branch)
+
+4. git log oneline "all (see commits of all branches)
+
+5 git log oneline all graph (graph of commits from all branches)
+
+6. git branch -d/-D <branch> (deletes a branch)
+
+7. git merge <branch> (run from master/main)
+
+
+
+
+______________________ WORKING WITH REMOTE REPO ______________________
+
+1. git remote add origin <url> (declaring remote repo)
+
+2. git push origin master/main (sends local repo to origin)
+
+3. git pull origin master (pull code from remote repo)
+
+4. git clone <url> (download/copy remote repo)
+
+
+
+_______________________UNDERSTANDING SOFTWARE VERSIONS -> V.1.0.0____________________
+
+1. git tag-a v1.0.0 <sha(optional)>
+
+Vim editor:
+
+Fn+insert-write a message
+
+:wq-save and quit
+
+2. git log (check if tagging was done successfully)
+
+3. git tag -d v1.0.0 (delete the mentioned tag)

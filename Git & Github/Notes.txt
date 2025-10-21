@@ -8,7 +8,9 @@ ______________________ BASIC COMMANDS ______________________
 
 4. git commit -m "commit message"
 
-5. Create a gitignore file and add files/folders that doesn't need tracking.
+5. git push
+
+6. Create a gitignore file and add files/folders that doesn't need tracking.
 
 
 
